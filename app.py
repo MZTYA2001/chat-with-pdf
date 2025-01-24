@@ -12,8 +12,8 @@ import tempfile
 
 
 # Initialize API key variables
-groq_api_key = None
-google_api_key = None
+groq_api_key =   "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"
+google_api_key = "AIzaSyDdAiOdIa2I28sphYw36Genb4D--2IN1tU"
 
 # Sidebar configuration
 with st.sidebar:
@@ -37,15 +37,15 @@ with st.sidebar:
 
     st.header("Settings")
 
-    st.write(
-        "🔑 **API Keys Required**:\n"
-        "- Get your Groq API key from [Groq API Key Page](https://console.groq.com/keys).\n"
-        "- Get your Google API key from [Google API Key Page](https://aistudio.google.com/app/apikey)."
-    )
+    # st.write(
+    #     "🔑 **API Keys Required**:\n"
+    #     "- Get your Groq API key from [Groq API Key Page](https://console.groq.com/keys).\n"
+    #     "- Get your Google API key from [Google API Key Page](https://aistudio.google.com/app/apikey)."
+    # )
 
-    # Input fields for API keys
-    groq_api_key = st.text_input("Enter your Groq API key:", type="password")
-    google_api_key = st.text_input("Enter your Google API key:", type="password")
+    # # Input fields for API keys
+    # groq_api_key = st.text_input("Enter your Groq API key:", type="password")
+    # google_api_key = st.text_input("Enter your Google API key:", type="password")
 
     # Validate API key inputs and initialize components if valid
     if groq_api_key and google_api_key:
